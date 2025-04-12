@@ -1,0 +1,28 @@
+model_loading:
+  max_workers: 8
+  timeout: 30
+  retry_attempts: 3
+
+cache:
+  model_cache_size: 32
+  form_data_ttl: 3600
+  prediction_cache_size: 1000
+
+preload:
+  common_models:
+    - disease
+    - diabetes
+    - heart_disease
+  
+  model_groups:
+    disease_group:
+      - disease
+      - diabetes
+    heart_group:
+      - heart_disease
+      - lung_cancer
+
+monitoring:
+  enable_metrics: true
+  log_slow_operations: true
+  slow_threshold_ms: 100
