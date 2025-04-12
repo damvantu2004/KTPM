@@ -21,8 +21,6 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import joblib
 
-
-
 # loading the models
 diabetes_model = joblib.load("models/diabetes_model.sav")
 heart_model = joblib.load("models/heart_disease_model.sav")
@@ -43,7 +41,8 @@ hepatitis_model = joblib.load('models/hepititisc_model.sav')
 liver_model = joblib.load('models/liver_model.sav')# Load the lung cancer prediction model
 lung_cancer_model = joblib.load('models/lung_cancer_model.sav')
 
-print("Loaded models")
+
+
 # sidebar
 with st.sidebar:
     selected = option_menu('Dự Đoán Đa Bệnh', [
@@ -61,46 +60,22 @@ with st.sidebar:
         icons=['','activity', 'heart', 'person','person','person','person','bar-chart-fill'],
         default_index=0)
 
-# Mark time after basic UI is created
-ui_ready_time = time.time()
-ui_duration = ui_ready_time - start_time
-print(f"UI cơ bản sẵn sàng sau: {ui_duration:.2f} giây")
-
-# Add JavaScript to measure complete load time
-st.markdown("""
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    console.log('DOM loaded');
-    
-    // Mark when page is fully loaded
-    window.addEventListener('load', function() {
-        console.log('Page fully loaded');
-        
-        // Send notification to Python
-        setTimeout(function() {
-            const loadTime = performance.now() / 1000;
-            console.log('Total load time:', loadTime);
-            
-            // In practice, you would need a way to send this data back to the server
-            // Example: using a Streamlit component or API call
-        }, 100);
-    });
-});
-</script>
-""", unsafe_allow_html=True)
 
 
 
 # Đo và hiển thị thời gian khởi động chỉ một lần duy nhất
 if 'startup_measured' not in st.session_state:
     end_time = time.time()
-    total_duration = end_time - start_time
-    st.sidebar.info(f"Thời gian khởi động: {total_duration:.2f} giây")
+    total_duration = end_time - start_time                                                                                                                                     
+    st.sidebar.info(f"Thời gian khởi động: {total_duration:.4f} giây")
     st.session_state.startup_measured = True
+    
+    # Ghi thời gian vào file
+    with open("startup_time.txt", "w") as file:
+        file.write(str(total_duration))
 
 
-
-
+ 
 
 
 # multiple disease prediction
