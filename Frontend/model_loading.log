@@ -1,0 +1,146 @@
+2025-04-13 22:47:18,130 - root - INFO - ModelManager instance created
+2025-04-13 22:47:25,815 - root - INFO - Loading model 'diabetes' from models/diabetes_model.sav
+2025-04-13 22:47:25,959 - root - INFO - Model 'diabetes' loaded in 0.1447 seconds (load #1)
+2025-04-13 22:47:27,232 - root - INFO - Loading model 'diabetes' from models/diabetes_model.sav
+2025-04-13 22:47:27,238 - root - INFO - Model 'diabetes' loaded in 0.0060 seconds (load #2)
+2025-04-13 22:47:28,003 - root - INFO - Loading model 'diabetes' from models/diabetes_model.sav
+2025-04-13 22:47:28,004 - root - INFO - Model 'diabetes' loaded in 0.0015 seconds (load #3)
+2025-04-13 22:47:28,506 - root - INFO - Loading model 'diabetes' from models/diabetes_model.sav
+2025-04-13 22:47:28,512 - root - INFO - Model 'diabetes' loaded in 0.0011 seconds (load #4)
+2025-04-13 22:47:28,931 - root - INFO - Loading model 'diabetes' from models/diabetes_model.sav
+2025-04-13 22:47:28,933 - root - INFO - Model 'diabetes' loaded in 0.0025 seconds (load #5)
+2025-04-13 22:47:29,374 - root - INFO - Loading model 'diabetes' from models/diabetes_model.sav
+2025-04-13 22:47:29,377 - root - INFO - Model 'diabetes' loaded in 0.0033 seconds (load #6)
+2025-04-13 22:48:02,903 - root - INFO - ModelManager instance created
+2025-04-13 22:48:03,879 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-53' coro=<WebSocketProtocol13.write_message.<locals>.wrapper() done, defined at C:\Users\damva\AppData\Local\Programs\Python\Python312\Lib\site-packages\tornado\websocket.py:1085> exception=WebSocketClosedError()>
+Traceback (most recent call last):
+  File "C:\Users\damva\AppData\Local\Programs\Python\Python312\Lib\site-packages\tornado\websocket.py", line 1087, in wrapper
+    await fut
+tornado.iostream.StreamClosedError: Stream is closed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\damva\AppData\Local\Programs\Python\Python312\Lib\site-packages\tornado\websocket.py", line 1089, in wrapper
+    raise WebSocketClosedError()
+tornado.websocket.WebSocketClosedError
+2025-04-13 22:48:08,631 - root - INFO - Loading model 'diabetes' from models/diabetes_model.sav
+2025-04-13 22:48:08,724 - root - INFO - Model 'diabetes' loaded in 0.0919 seconds (load #1)
+2025-04-13 22:48:13,287 - root - INFO - Loading model 'diabetes' from models/diabetes_model.sav
+2025-04-13 22:48:13,289 - root - INFO - Model 'diabetes' loaded in 0.0022 seconds (load #2)
+2025-04-13 22:48:14,025 - root - INFO - Loading model 'diabetes' from models/diabetes_model.sav
+2025-04-13 22:48:14,030 - root - INFO - Model 'diabetes' loaded in 0.0053 seconds (load #3)
+2025-04-13 22:48:14,565 - root - INFO - Loading model 'diabetes' from models/diabetes_model.sav
+2025-04-13 22:48:14,567 - root - INFO - Model 'diabetes' loaded in 0.0017 seconds (load #4)
+2025-04-13 22:48:15,050 - root - INFO - Loading model 'diabetes' from models/diabetes_model.sav
+2025-04-13 22:48:15,050 - root - INFO - Model 'diabetes' loaded in 0.0000 seconds (load #5)
+2025-04-13 22:48:32,389 - root - INFO - Loading model 'diabetes' from models/diabetes_model.sav
+2025-04-13 22:48:32,392 - root - INFO - Model 'diabetes' loaded in 0.0029 seconds (load #6)
+2025-04-13 22:48:43,966 - root - INFO - Loading model 'diabetes' from models/diabetes_model.sav
+2025-04-13 22:48:43,966 - root - INFO - Model 'diabetes' loaded in 0.0000 seconds (load #7)
+2025-04-13 22:48:45,100 - root - INFO - Loading model 'diabetes' from models/diabetes_model.sav
+2025-04-13 22:48:45,124 - root - INFO - Model 'diabetes' loaded in 0.0236 seconds (load #8)
+2025-04-13 22:48:45,742 - root - INFO - Loading model 'diabetes' from models/diabetes_model.sav
+2025-04-13 22:48:45,745 - root - INFO - Model 'diabetes' loaded in 0.0030 seconds (load #9)
+2025-04-13 22:48:46,132 - root - INFO - Loading model 'diabetes' from models/diabetes_model.sav
+2025-04-13 22:48:46,134 - root - INFO - Model 'diabetes' loaded in 0.0022 seconds (load #10)
+2025-04-13 22:48:46,379 - root - INFO - Loading model 'diabetes' from models/diabetes_model.sav
+2025-04-13 22:48:46,382 - root - INFO - Model 'diabetes' loaded in 0.0024 seconds (load #11)
+2025-04-13 22:48:46,613 - root - INFO - Loading model 'diabetes' from models/diabetes_model.sav
+2025-04-13 22:48:46,616 - root - INFO - Model 'diabetes' loaded in 0.0010 seconds (load #12)
+2025-04-13 22:48:46,835 - root - INFO - Loading model 'diabetes' from models/diabetes_model.sav
+2025-04-13 22:48:46,837 - root - INFO - Model 'diabetes' loaded in 0.0027 seconds (load #13)
+2025-04-13 22:48:47,057 - root - INFO - Loading model 'diabetes' from models/diabetes_model.sav
+2025-04-13 22:48:47,057 - root - INFO - Model 'diabetes' loaded in 0.0000 seconds (load #14)
+2025-04-13 22:48:47,533 - root - INFO - Loading model 'diabetes' from models/diabetes_model.sav
+2025-04-13 22:48:47,539 - root - INFO - Model 'diabetes' loaded in 0.0000 seconds (load #15)
+2025-04-13 22:48:48,096 - root - INFO - Loading model 'diabetes' from models/diabetes_model.sav
+2025-04-13 22:48:48,096 - root - INFO - Model 'diabetes' loaded in 0.0000 seconds (load #16)
+2025-04-13 22:48:48,498 - root - INFO - Loading model 'diabetes' from models/diabetes_model.sav
+2025-04-13 22:48:48,498 - root - INFO - Model 'diabetes' loaded in 0.0000 seconds (load #17)
+2025-04-13 22:48:49,015 - root - INFO - Loading model 'diabetes' from models/diabetes_model.sav
+2025-04-13 22:48:49,018 - root - INFO - Model 'diabetes' loaded in 0.0030 seconds (load #18)
+2025-04-13 22:48:49,534 - root - INFO - Loading model 'diabetes' from models/diabetes_model.sav
+2025-04-13 22:48:49,535 - root - INFO - Model 'diabetes' loaded in 0.0010 seconds (load #19)
+2025-04-13 22:48:50,068 - root - INFO - Loading model 'diabetes' from models/diabetes_model.sav
+2025-04-13 22:48:50,072 - root - INFO - Model 'diabetes' loaded in 0.0032 seconds (load #20)
+2025-04-13 22:48:50,565 - root - INFO - Loading model 'diabetes' from models/diabetes_model.sav
+2025-04-13 22:48:50,567 - root - INFO - Model 'diabetes' loaded in 0.0013 seconds (load #21)
+2025-04-13 22:48:50,899 - root - INFO - Loading model 'diabetes' from models/diabetes_model.sav
+2025-04-13 22:48:50,902 - root - INFO - Model 'diabetes' loaded in 0.0021 seconds (load #22)
+2025-04-13 22:48:51,145 - root - INFO - Loading model 'diabetes' from models/diabetes_model.sav
+2025-04-13 22:48:51,147 - root - INFO - Model 'diabetes' loaded in 0.0027 seconds (load #23)
+2025-04-13 22:48:51,867 - root - INFO - Loading model 'diabetes' from models/diabetes_model.sav
+2025-04-13 22:48:51,872 - root - INFO - Model 'diabetes' loaded in 0.0036 seconds (load #24)
+2025-04-13 22:48:52,444 - root - INFO - Loading model 'diabetes' from models/diabetes_model.sav
+2025-04-13 22:48:52,447 - root - INFO - Model 'diabetes' loaded in 0.0025 seconds (load #25)
+2025-04-13 22:54:10,709 - root - INFO - ModelManager instance created
+2025-04-13 22:54:10,733 - root - INFO - Loading model 'diabetes' from models/diabetes_model.sav
+2025-04-13 22:54:10,737 - root - INFO - Model 'diabetes' loaded in 0.0036 seconds (load #1)
+2025-04-13 22:54:11,805 - root - INFO - Loading model 'diabetes' from models/diabetes_model.sav
+2025-04-13 22:54:11,807 - root - INFO - Model 'diabetes' loaded in 0.0023 seconds (load #2)
+2025-04-13 22:54:12,321 - root - INFO - Loading model 'diabetes' from models/diabetes_model.sav
+2025-04-13 22:54:12,323 - root - INFO - Model 'diabetes' loaded in 0.0010 seconds (load #3)
+2025-04-13 22:54:12,527 - root - INFO - Loading model 'diabetes' from models/diabetes_model.sav
+2025-04-13 22:54:12,530 - root - INFO - Model 'diabetes' loaded in 0.0030 seconds (load #4)
+2025-04-13 22:54:12,715 - root - INFO - Loading model 'diabetes' from models/diabetes_model.sav
+2025-04-13 22:54:12,719 - root - INFO - Model 'diabetes' loaded in 0.0025 seconds (load #5)
+2025-04-13 22:54:13,003 - root - INFO - Loading model 'diabetes' from models/diabetes_model.sav
+2025-04-13 22:54:13,011 - root - INFO - Model 'diabetes' loaded in 0.0075 seconds (load #6)
+2025-04-13 22:54:13,241 - root - INFO - Loading model 'diabetes' from models/diabetes_model.sav
+2025-04-13 22:54:13,246 - root - INFO - Model 'diabetes' loaded in 0.0030 seconds (load #7)
+2025-04-13 22:54:13,625 - root - INFO - Loading model 'diabetes' from models/diabetes_model.sav
+2025-04-13 22:54:13,628 - root - INFO - Model 'diabetes' loaded in 0.0030 seconds (load #8)
+2025-04-13 22:54:13,891 - root - INFO - Loading model 'diabetes' from models/diabetes_model.sav
+2025-04-13 22:54:13,894 - root - INFO - Model 'diabetes' loaded in 0.0028 seconds (load #9)
+2025-04-13 22:54:14,194 - root - INFO - Loading model 'diabetes' from models/diabetes_model.sav
+2025-04-13 22:54:14,197 - root - INFO - Model 'diabetes' loaded in 0.0035 seconds (load #10)
+2025-04-13 22:54:14,653 - root - INFO - Loading model 'diabetes' from models/diabetes_model.sav
+2025-04-13 22:54:14,653 - root - INFO - Model 'diabetes' loaded in 0.0000 seconds (load #11)
+2025-04-13 22:54:15,031 - root - INFO - Loading model 'diabetes' from models/diabetes_model.sav
+2025-04-13 22:54:15,033 - root - INFO - Model 'diabetes' loaded in 0.0023 seconds (load #12)
+2025-04-13 22:54:15,280 - root - INFO - Loading model 'diabetes' from models/diabetes_model.sav
+2025-04-13 22:54:15,284 - root - INFO - Model 'diabetes' loaded in 0.0033 seconds (load #13)
+2025-04-13 22:54:15,499 - root - INFO - Loading model 'diabetes' from models/diabetes_model.sav
+2025-04-13 22:54:15,502 - root - INFO - Model 'diabetes' loaded in 0.0021 seconds (load #14)
+2025-04-13 22:54:15,700 - root - INFO - Loading model 'diabetes' from models/diabetes_model.sav
+2025-04-13 22:54:15,703 - root - INFO - Model 'diabetes' loaded in 0.0022 seconds (load #15)
+2025-04-13 22:54:15,897 - root - INFO - Loading model 'diabetes' from models/diabetes_model.sav
+2025-04-13 22:54:15,900 - root - INFO - Model 'diabetes' loaded in 0.0026 seconds (load #16)
+2025-04-13 22:54:16,094 - root - INFO - Loading model 'diabetes' from models/diabetes_model.sav
+2025-04-13 22:54:16,097 - root - INFO - Model 'diabetes' loaded in 0.0032 seconds (load #17)
+2025-04-13 22:54:16,284 - root - INFO - Loading model 'diabetes' from models/diabetes_model.sav
+2025-04-13 22:54:16,286 - root - INFO - Model 'diabetes' loaded in 0.0013 seconds (load #18)
+2025-04-13 22:54:16,476 - root - INFO - Loading model 'diabetes' from models/diabetes_model.sav
+2025-04-13 22:54:16,477 - root - INFO - Model 'diabetes' loaded in 0.0014 seconds (load #19)
+2025-04-13 22:54:16,681 - root - INFO - Loading model 'diabetes' from models/diabetes_model.sav
+2025-04-13 22:54:16,684 - root - INFO - Model 'diabetes' loaded in 0.0020 seconds (load #20)
+2025-04-13 22:54:16,897 - root - INFO - Loading model 'diabetes' from models/diabetes_model.sav
+2025-04-13 22:54:16,900 - root - INFO - Model 'diabetes' loaded in 0.0021 seconds (load #21)
+2025-04-13 22:54:17,102 - root - INFO - Loading model 'diabetes' from models/diabetes_model.sav
+2025-04-13 22:54:17,105 - root - INFO - Model 'diabetes' loaded in 0.0015 seconds (load #22)
+2025-04-13 22:54:17,299 - root - INFO - Loading model 'diabetes' from models/diabetes_model.sav
+2025-04-13 22:54:17,302 - root - INFO - Model 'diabetes' loaded in 0.0023 seconds (load #23)
+2025-04-13 22:54:17,486 - root - INFO - Loading model 'diabetes' from models/diabetes_model.sav
+2025-04-13 22:54:17,489 - root - INFO - Model 'diabetes' loaded in 0.0010 seconds (load #24)
+2025-04-13 22:54:17,670 - root - INFO - Loading model 'diabetes' from models/diabetes_model.sav
+2025-04-13 22:54:17,671 - root - INFO - Model 'diabetes' loaded in 0.0014 seconds (load #25)
+2025-04-13 22:54:17,848 - root - INFO - Loading model 'diabetes' from models/diabetes_model.sav
+2025-04-13 22:54:17,851 - root - INFO - Model 'diabetes' loaded in 0.0024 seconds (load #26)
+2025-04-13 22:54:18,031 - root - INFO - Loading model 'diabetes' from models/diabetes_model.sav
+2025-04-13 22:54:18,033 - root - INFO - Model 'diabetes' loaded in 0.0020 seconds (load #27)
+2025-04-13 22:54:18,234 - root - INFO - Loading model 'diabetes' from models/diabetes_model.sav
+2025-04-13 22:54:18,236 - root - INFO - Model 'diabetes' loaded in 0.0010 seconds (load #28)
+2025-04-13 22:54:18,423 - root - INFO - Loading model 'diabetes' from models/diabetes_model.sav
+2025-04-13 22:54:18,424 - root - INFO - Model 'diabetes' loaded in 0.0014 seconds (load #29)
+2025-04-13 22:54:18,632 - root - INFO - Loading model 'diabetes' from models/diabetes_model.sav
+2025-04-13 22:54:18,635 - root - INFO - Model 'diabetes' loaded in 0.0030 seconds (load #30)
+2025-04-13 22:54:18,813 - root - INFO - Loading model 'diabetes' from models/diabetes_model.sav
+2025-04-13 22:54:18,815 - root - INFO - Model 'diabetes' loaded in 0.0024 seconds (load #31)
+2025-04-13 22:54:19,003 - root - INFO - Loading model 'diabetes' from models/diabetes_model.sav
+2025-04-13 22:54:19,004 - root - INFO - Model 'diabetes' loaded in 0.0012 seconds (load #32)
+2025-04-13 22:54:19,188 - root - INFO - Loading model 'diabetes' from models/diabetes_model.sav
+2025-04-13 22:54:19,190 - root - INFO - Model 'diabetes' loaded in 0.0020 seconds (load #33)
+2025-04-13 22:54:19,369 - root - INFO - Loading model 'diabetes' from models/diabetes_model.sav
+2025-04-13 22:54:19,371 - root - INFO - Model 'diabetes' loaded in 0.0021 seconds (load #34)

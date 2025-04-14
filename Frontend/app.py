@@ -35,13 +35,45 @@ def process_prediction(_model, data):
 
 # Load models only when needed
 def get_model(name, path):
-    return model_manager.load_model(name, path)
+    """
+    Tải model từ đường dẫn chỉ định mỗi lần được gọi.
+    
+    Args:
+        name (str): Tên của model
+        path (str): Đường dẫn đến file model
+        
+    Returns:
+        model: Model đã tải
+    """
+    start_time = time.time()
+    model = model_manager.load_model(name, path)
+    end_time = time.time()
+    
+    # Tính thời gian tải model
+    load_time = end_time - start_time
+    
+    # Khởi tạo biến theo dõi trong session_state nếu chưa có
+    if 'click_count' not in st.session_state:
+        st.session_state.click_count = 0
+        st.session_state.total_time = 0
+    
+    # Tăng số lần click và cộng dồn thời gian
+    st.session_state.click_count += 1
+    st.session_state.total_time += load_time
+    
+    # Hiển thị thông tin về việc tải model trong sidebar
+    st.sidebar.info(f"Thời gian dự đoán lần này: {load_time:.8f} giây")
+    st.sidebar.info(f"Tổng số lần dự đoán: {st.session_state.click_count}")
+    st.sidebar.info(f"Tổng thời gian cho {st.session_state.click_count} lần dự đoán: {st.session_state.total_time:.8f} giây")
+    st.sidebar.info(f"Thời gian trung bình: {st.session_state.total_time/st.session_state.click_count:.8f} giây")
+    
+    return model
 
-header_container = st.container()
+
 # sidebar
 with st.sidebar:
     selected = option_menu('Dự Đoán Đa Bệnh', [
-        'Dự Đoán Bệnh',
+        # 'Dự Đoán Bệnh',
         'Dự Đoán Tiểu Đường',
         'Dự Đoán Bệnh Tim',
         'Dự Đoán Parkinson',
@@ -61,48 +93,15 @@ print(f"UI co ban da san sang: {ui_duration:.6f} giây")
 
 
 
-# Đo và hiển thị thời gian khởi động chỉ một lần duy nhất
-with header_container:
-    if 'startup_measured' not in st.session_state:
-        end_time = time.time()
-        total_duration = end_time - start_time
-        st.sidebar.info(f"Thời gian khởi động: {total_duration:.2f} giây")
-        st.session_state.startup_measured = True
 
-#  # Ghi thời gian khởi động vào file Excel
-#     excel_path = "startup_times.xlsx"
-    
-#     # Lấy thời gian hiện tại
-#     current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    
-#     # Tạo dữ liệu để ghi vào Excel
-#     new_data = {
-#         'Thời điểm': [current_time],
-#         'Thời gian khởi động (giây)': [total_duration]
-#     }
-    
-#     # Kiểm tra xem file Excel đã tồn tại chưa
-#     if os.path.exists(excel_path):
-#         # Nếu file đã tồn tại, đọc file và thêm dữ liệu mới
-#         try:
-#             df_existing = pd.read_excel(excel_path)
-#             df_new = pd.DataFrame(new_data)
-#             df_updated = pd.concat([df_existing, df_new], ignore_index=True)
-#         except Exception as e:
-#             st.sidebar.warning(f"Lỗi khi đọc file Excel: {e}")
-#             # Nếu có lỗi khi đọc file, tạo DataFrame mới
-#             df_updated = pd.DataFrame(new_data)
-#     else:
-#         # Nếu file chưa tồn tại, tạo DataFrame mới
-#         df_updated = pd.DataFrame(new_data)
-    
-#     # Ghi DataFrame vào file Excel
-#     try:
-#         df_updated.to_excel(excel_path, index=False)
-#         st.sidebar.info(f"Đã ghi thời gian khởi động vào file {excel_path}")
-#     except Exception as e:
-#         st.sidebar.warning(f"Lỗi khi ghi file Excel: {e}")
-      
+# Đo và hiển thị thời gian khởi động chỉ một lần duy nhất
+if 'startup_measured' not in st.session_state:
+    end_time = time.time()
+    total_duration = end_time - start_time
+    st.sidebar.info(f"Thời gian khởi động: {total_duration:.2f} giây")
+    st.session_state.startup_measured = True
+
+
 # Ghi thời gian khởi động vào một tệp 
     with open("startup_time.txt", "w") as file:
         file.write(str(total_duration))
@@ -192,8 +191,6 @@ elif selected == 'Dự Đoán Tiểu Đường':
             image = Image.open('negative.jpg')
             st.image(image, caption='')
         st.success(name+' , ' + diabetes_dig)
-        
-        
 
 
 

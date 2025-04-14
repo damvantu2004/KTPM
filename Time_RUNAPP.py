@@ -13,7 +13,7 @@ LENH = [
 os.chdir(THU_MUC_APP)
 print("Đường dẫn làm việc hiện tại:", os.getcwd())
 
-so_lan_chay = 7
+so_lan_chay = 300
 tong_thoi_gian = 0.0
 
 def is_streamlit_running():
